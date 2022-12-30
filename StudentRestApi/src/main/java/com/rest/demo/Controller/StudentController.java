@@ -3,6 +3,8 @@ package com.rest.demo.Controller;
 import java.util.List;
 import java.util.Optional;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,14 +19,14 @@ import com.rest.demo.Repository.StudentRepo;
 
 @RestController
 public class StudentController {
-
+	
+ private static final Logger  Log =LoggerFactory.getLogger(StudentController.class);
 	@Autowired
 	private StudentRepo repo;
 	
 	
 	@GetMapping("/Students/")
 	public List<StudentModel> FindStudents() {
-		
 		return (List<StudentModel>) repo.findAll();
 		
 	}
@@ -32,6 +34,8 @@ public class StudentController {
 	
 	@GetMapping("/Students/{id}")
 	public Optional<StudentModel> getstudent(@PathVariable("id")  int id) {
+		Log.info("finding student by id :" + id);
+
 		return repo.findById(id);
 		
 	}

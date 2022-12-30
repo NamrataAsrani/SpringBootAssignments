@@ -1,0 +1,66 @@
+2022-12-30T15:54:16.332+05:30  INFO 24472 --- [main] c.rest.demo.StudentRestApiApplication    : Starting StudentRestApiApplication using Java 17.0.1 with PID 24472 (C:\Users\nasrani\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Spring assignments\StudentRestApi\target\classes started by nasrani in C:\Users\nasrani\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Spring assignments\StudentRestApi)
+2022-12-30T15:54:16.336+05:30  INFO 24472 --- [main] c.rest.demo.StudentRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T15:54:17.188+05:30  INFO 24472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T15:54:17.258+05:30  INFO 24472 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 1 JPA repository interfaces.
+2022-12-30T15:54:17.867+05:30  WARN 24472 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-12-30T15:54:17.909+05:30  INFO 24472 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-12-30T15:54:17.910+05:30  INFO 24472 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1509 ms
+2022-12-30T15:54:18.163+05:30  INFO 24472 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T15:54:18.267+05:30  INFO 24472 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T15:54:18.496+05:30  WARN 24472 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T15:54:18.652+05:30  INFO 24472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T15:54:19.096+05:30  INFO 24472 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7893c715
+2022-12-30T15:54:19.098+05:30  INFO 24472 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T15:54:19.169+05:30  INFO 24472 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-30T15:54:20.028+05:30  INFO 24472 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T15:54:20.039+05:30  INFO 24472 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T15:54:20.307+05:30  WARN 24472 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T15:54:20.647+05:30  INFO 24472 --- [main] io.undertow                              : starting server: Undertow - 2.3.2.Final
+2022-12-30T15:54:20.655+05:30  INFO 24472 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2022-12-30T15:54:20.665+05:30  INFO 24472 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2022-12-30T15:54:20.707+05:30  INFO 24472 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2022-12-30T15:54:20.773+05:30  INFO 24472 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8086 (http) with context path '/StudentApi'
+2022-12-30T15:54:20.782+05:30  INFO 24472 --- [main] c.rest.demo.StudentRestApiApplication    : Started StudentRestApiApplication in 5.097 seconds (process running for 7.222)
+2022-12-30T15:54:28.580+05:30  INFO 24472 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30T15:54:28.580+05:30  INFO 24472 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30T15:54:28.581+05:30  INFO 24472 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-30T15:54:28.616+05:30  INFO 24472 --- [XNIO-1 task-2] c.r.demo.Controller.StudentController    : finding student by id :1
+2022-12-30T16:00:12.055+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-30T16:00:12.064+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.3.2.Final
+2022-12-30T16:00:12.071+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-30T16:00:12.077+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T16:00:12.081+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T16:00:12.271+05:30  INFO 24472 --- [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-12-30T16:02:07.552+05:30  INFO 14680 --- [main] c.rest.demo.StudentRestApiApplication    : Starting StudentRestApiApplication using Java 17.0.1 with PID 14680 (C:\Users\nasrani\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Spring assignments\StudentRestApi\target\classes started by nasrani in C:\Users\nasrani\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\Spring assignments\StudentRestApi)
+2022-12-30T16:02:07.555+05:30  INFO 14680 --- [main] c.rest.demo.StudentRestApiApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-12-30T16:02:08.272+05:30  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-30T16:02:08.349+05:30  INFO 14680 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+2022-12-30T16:02:08.826+05:30  WARN 14680 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-12-30T16:02:08.847+05:30  INFO 14680 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-12-30T16:02:08.848+05:30  INFO 14680 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1247 ms
+2022-12-30T16:02:08.979+05:30  INFO 14680 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-30T16:02:09.045+05:30  INFO 14680 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2022-12-30T16:02:09.256+05:30  WARN 14680 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2022-12-30T16:02:09.421+05:30  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-12-30T16:02:10.010+05:30  INFO 14680 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16c5b50a
+2022-12-30T16:02:10.014+05:30  INFO 14680 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-12-30T16:02:10.099+05:30  INFO 14680 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-12-30T16:02:11.181+05:30  INFO 14680 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-30T16:02:11.196+05:30  INFO 14680 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T16:02:11.602+05:30  WARN 14680 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-30T16:02:12.196+05:30  INFO 14680 --- [main] io.undertow                              : starting server: Undertow - 2.3.2.Final
+2022-12-30T16:02:12.205+05:30  INFO 14680 --- [main] org.xnio                                 : XNIO version 3.8.8.Final
+2022-12-30T16:02:12.216+05:30  INFO 14680 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.8.Final
+2022-12-30T16:02:12.264+05:30  INFO 14680 --- [main] org.jboss.threads                        : JBoss Threads version 3.5.0.Final
+2022-12-30T16:02:12.368+05:30  INFO 14680 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8086 (http) with context path '/StudentApi'
+2022-12-30T16:02:12.382+05:30  INFO 14680 --- [main] c.rest.demo.StudentRestApiApplication    : Started StudentRestApiApplication in 5.276 seconds (process running for 6.298)
+2022-12-30T16:02:17.400+05:30  INFO 14680 --- [XNIO-1 task-2] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-30T16:02:17.401+05:30  INFO 14680 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-12-30T16:02:17.402+05:30  INFO 14680 --- [XNIO-1 task-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-12-30T16:02:17.445+05:30  INFO 14680 --- [XNIO-1 task-2] c.r.demo.Controller.StudentController    : finding student by id :1
+2022-12-30T16:02:48.159+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-12-30T16:02:48.161+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.3.2.Final
+2022-12-30T16:02:48.164+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-12-30T16:02:48.166+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-30T16:02:48.168+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-12-30T16:02:48.177+05:30  INFO 14680 --- [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
