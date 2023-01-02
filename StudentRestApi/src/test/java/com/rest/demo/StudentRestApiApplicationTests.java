@@ -17,7 +17,7 @@ import com.rest.demo.Repository.StudentRepo;
 @SpringBootTest
 class StudentRestApiApplicationTests {
 
-	@Value("${springboot-rest-demo.services.url}")
+	@Value("${StudentRestApi.services.url}")
 	private String baseUrl;
 	
 	

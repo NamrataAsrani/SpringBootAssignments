@@ -6,6 +6,9 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +19,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.rest.demo.Model.StudentModel;
 import com.rest.demo.Repository.StudentRepo;
+
+
 
 @RestController
 public class StudentController {
@@ -33,6 +38,8 @@ public class StudentController {
 	
 	
 	@GetMapping("/Students/{id}")
+	@Cacheable("Student-cache")
+	@Transactional(readOnly = true)
 	public Optional<StudentModel> getstudent(@PathVariable("id")  int id) {
 		Log.info("finding student by id :" + id);
 
@@ -61,6 +68,7 @@ public class StudentController {
 	
 	
 	@DeleteMapping("/Students/{id}")
+	@CacheEvict("Student-cache")
 	public String deleteStudent(@PathVariable("id") int id)
 	{
 		repo.deleteById(id);

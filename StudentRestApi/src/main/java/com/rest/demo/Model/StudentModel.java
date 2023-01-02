@@ -1,5 +1,7 @@
 package com.rest.demo.Model;
 
+import java.io.Serializable;
+
 import jakarta.annotation.Generated;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +11,9 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="student")
-public class StudentModel {
+public class StudentModel implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
