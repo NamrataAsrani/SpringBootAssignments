@@ -7,6 +7,7 @@ import org.springframework.batch.core.configuration.annotation.JobBuilderFactory
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.job.builder.JobBuilder;
 import org.springframework.batch.core.job.flow.Flow;
+import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
 import org.springframework.batch.core.step.builder.StepBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@EnableBatchProcessing
 public class BatchConfig {
+	
 	
 	@Autowired
 	private StepBuilderFactory sbf;
@@ -35,7 +38,7 @@ public class BatchConfig {
 	
 	@Bean
 	public Step step() {
-		return sbf.get("step1")
+		return  sbf.get("step1")
 				.<String,String>chunk(1)
 				.reader(reader())
 				.processor(processor())
@@ -63,5 +66,7 @@ public class BatchConfig {
 	public MyJobListener listener() {
 		return new MyJobListener();
 	}
-
+	
+	
+	
 }
